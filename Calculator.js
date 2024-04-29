@@ -27,13 +27,16 @@ function calculate() {
                 else {
                     display.value = "Error";
                 }
-            } else {
+            } 
+            else {
                 display.value = eval(display.value);
             }
-        } catch (error) {
+        } 
+        catch (error) {
             display.value = "Error";
         }
-    } else {
+    } 
+    else {
         display.value = "Error";
     }
 }
