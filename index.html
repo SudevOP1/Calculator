@@ -13,9 +13,11 @@
     <div id="calculator">
         <input id="display" readonly>
         <div id="keys">
-            <button onclick="clearDisplay()" class="operator-btn">AC</button>
+            <button onclick="clearDisplay()" style="font-size: 35px;" class="operator-btn">AC</button>
             <button class="empty"></button>
-            <button class="empty"></button>
+            <div class="backspace">
+                <button class="operator-btn"><img src="pngwing.com.png"></button>
+            </div>
             <button class="equals" onclick="calculate()" class="operator-btn">=</button>
             <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
             <button onclick="appendToDisplay('7')">7</button>
