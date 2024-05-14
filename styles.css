@@ -5,6 +5,7 @@ body{
     align-items: center;
     height: 100vh;
     background-color: hsl(0, 0%, 95%);
+    border: 50px;
 }
 #calculator{
     font-family: Arial, sans-serif;
@@ -15,19 +16,21 @@ body{
 }
 #display{
     width: 100%;
-    padding: 20px;
-    font-size: 5rem;
+    font-size: 60px;
     text-align: left;
     border: none;
     border-radius: 5px;
+    padding: 20px;
     background-color: hsl(0, 0%, 20%);
+    height: 150px;
     color: white;
 }
 #keys{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    padding: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 button{
     width: 100px;
@@ -38,7 +41,7 @@ button{
     color: white;
     font-weight: bold;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 40px;
 }
 button:hover{
     background-color: hsl(0, 0%, 40%);
@@ -46,43 +49,47 @@ button:hover{
 button:active{
     background-color: hsl(0, 0%, 50%);
 }
-.operator-btn{
+.operator-btn-1{
+    background-color: hsl(0, 0%, 80%);
+    color: black;
+    font-size: 40px;
+}
+.operator-btn-1:hover{
+    background-color: hsl(0, 0%, 70%);
+}
+.operator-btn-1:active{
+    background-color: hsl(0, 0%, 60%);
+}
+.operator-btn-2{
     background-color: hsl(35, 100%, 55%);
     font-size: 40px;
+    color: black;
 }
-.operator-btn:hover{
+.operator-btn-2:hover{
     background-color: hsl(35, 100%, 65%);
 }
-.operator-btn:active{
+.operator-btn-2:active{
     background-color: hsl(35, 100%, 75%);
-}
-.empty{
-    width: 100px;
-    height: 100px;
-    border: none;
-    background-color: Hsl(0, 0%, 15%);
-    font-size: 25px;
-    color: white;
-}
-.empty:hover{
-    background-color: Hsl(0, 0%, 15%);
-}
-.equals{
-    background-color: green;
-    font-size: 40px;
-}
-.equals:hover{
-    cursor: pointer;
-    background-color: hsl(120, 100%, 30%);
-}
-.equals:active{
-    background-color: hsl(120, 100%, 35%);
 }
 .backspace{
     height: 10px;
     width: 10px;
 }
+.zero-btn{
+    width: 220px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 40px;
+}
+.zero-btn:hover{
+    background-color: hsl(0, 0%, 40%);
+}
 
-.title {
-    
-  }
+.zero-btn:active{
+    background-color: hsl(0, 0%, 50%);
+}
